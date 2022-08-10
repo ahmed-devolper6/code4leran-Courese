@@ -1,6 +1,6 @@
-from django.apps import AppConfig
+#from django.apps import AppConfig
 
 
-class CouresesConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
-    name = 'coureses'
+#class CouresesConfig(AppConfig):
+#    default_auto_field = 'django.db.models.BigAutoField'
+#s    name = 'coureses'
