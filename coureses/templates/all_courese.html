@@ -1,0 +1,5 @@
+<h1> الأكثر مشاهده </h1>
+{% for cou in all %}
+    <h1><a href="{% url 'single_c' cou.id %}">{{cou}}</a></h1>
+{% endfor %}
+<a href="{% url 'new' %}">new courese</a>

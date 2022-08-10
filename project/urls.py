@@ -15,7 +15,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from coureses.views import all_courese , single , new_courese , edit , delete
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('blog/', all_courese , name='all'),
+
+    path('blog/new', new_courese , name='new'),
+
+    path('blog/<int:id>', single , name='single_c'),
+
+    path('blog/<int:id>/edit', edit , name='edit'),
+
+    path('blog/<int:id>/delete', delete , name='delete'),
+
+
 ]
